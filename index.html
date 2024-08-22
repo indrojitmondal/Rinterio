@@ -35,20 +35,21 @@
                     h_color: 'rgb(33, 33, 33)',
                     portfolio: 'rgb(255, 255, 255)',
                     border_c:'rgb(233, 233, 233);',
-                    clg_p:'rgb(115,115, 115);'
-
+                    clg_p:'rgb(115,115, 115);',
+                    connect:'rgba(171, 239, 95, 0.2)',
 
                 },
                 fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui'],
-      'serif': ['ui-serif', 'Georgia'],
-      'mono': ['ui-monospace', 'SFMono-Regular'],
-      'display': ['Oswald'],
-      'body': ['"Open Sans"',],
-        'manrope' : ['Manrope', 'sans-serif']
-        },
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif']
+                },
                 backgroundImage: {
                     leaf1: "url('./images/leaf01.png')",
+                    connect_bg: "url('./assets/bg.jpg')",
                    
                 },
             },
@@ -135,16 +136,16 @@
       </nav>
 
       <!-- Banner -->
-      <section >
+    <section >
         <div class="hero  h-auto">
             <div class="hero-content text-center">
-              <div class="max-w-5xl mx-auto">
-                <img class="block mx-auto" src="assets/banner.png" alt="">
-                <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
-                <p class="py-6">
+                <div class="max-w-5xl mx-auto">
+                  <img class="block mx-auto" src="assets/banner.png" alt="">
+                  <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                  <p class="py-6">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                </p>
-                <!-- <button class="btn btn-primary">View Details</button> -->
+                  </p>
+                   <!-- <button class="btn btn-primary">View Details</button> -->
                 
               
                     <a class=" btn btn-ghost text-lg bg-secondary p-3 rounded-3xl">
@@ -153,16 +154,13 @@
                         <i class="fa-solid block  w-6 h-6  text-lg  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45   "></i>
                        
                         
-                      </a>
+                    </a>
                 
                 
-              </div>
+                </div>
             </div>
-          </div>
-      </section>
-
-      
-
+        </div>
+    </section>
     </main>
 
     <!-- About  -->
@@ -293,7 +291,7 @@
 
             <!-- heading -->
             <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold">
+                <h3 class="font-bold bg-connect inline-block rounded-3xl">
                     <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
                        
                     Explore our Latest works</h3>
@@ -410,5 +408,57 @@
         </div>
 
     </section>
+
+    <!-- Let's Discuss -->
+    <section class="mt-6 bg-connect_bg bg-cover">
+
+        <div class="w-11/12 lg:w-9/12 mx-auto pt-10 pb-20">
+
+            <!-- heading -->
+            <div class="max-w-5xl mx-auto text-center space-y-6">
+                <h3 class="font-bold bg-connect inline-block rounded-3xl">
+                    <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
+                       
+                    Let's Connect</h3>
+                <h1 class="text-h_color font-bold text-4xl"> Let's Discuss Next Project</h1>
+                <p class="text-text_color font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <!-- input container-->
+            <!-- input-field -->
+            <div class="mt-5">
+
+                <div class="grid grid-cols-1 gap-3 lg:grid-cols-2  lg:gap-6">
+                  <input type="text" placeholder="First Name*" class="input input-bordered w-full " />
+                  <input type="text" placeholder="Last Name*" class="input input-bordered w-full " />
+                  <input type="text" placeholder="Phone Number*" class="input input-bordered w-full " />
+                  <input type="text" placeholder="Email Number*" class="input input-bordered w-full " />
+                </div> 
+                <div class="mt-6">
+                    <textarea class="textarea textarea-bordered w-full h-[240px]" placeholder="Write your message here"></textarea>
+                </div>        
+
+
+             </div> 
+            
+            <!-- Send Mail button -->
+            <div class="bg-primary px-3 py-4 rounded-3xl text-center mt-4 lg:mt-6 ">
+                <button class="text-xl font-extrabold">Send Mail 
+
+                    <i class="fa-solid  w-6 h-6 ml-2   fa-arrow-right  text-white bg-black rounded-xl -rotate-45 text-base "></i>
+       
+                </button>
+              
+            </div>
+
+        </div>
+
+
+
+
+        
+
+    </section>
+
 </body>
 </html>
