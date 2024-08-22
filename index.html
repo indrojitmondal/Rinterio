@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio </title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Manrope font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+<!-- DaisyUI configuration -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font-Awesome Configuration -->
+<script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
 <!-- Tailwind CSS Configuration -->
 <script>
     tailwind.config = {
         theme: {
             extend: {
                 colors: {
-                    primary: 'rgb(139, 195, 74)',
+                   
                     secondary: 'rgb(17, 17, 17)',
                     body: 'rgb(248, 246, 243)',
                     accent: 'rgb(106, 151, 57)',
                     body_neutral: 'rgb(51, 51, 51)',
+                    primary: 'rgb(171, 239, 95)',
+                    header_bg: '#F7F7F7',
+                    secondary: 'rgba(171, 239, 95, 0.5)'
+
                 },
                 fontFamily: {
-                    Poppins: 'Poppins',
-                },
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['"Open Sans"',],
+        'manrope' : ['Manrope', 'sans-serif']
+        },
                 backgroundImage: {
                     leaf1: "url('./images/leaf01.png')",
                    
@@ -30,7 +49,111 @@
     }
 </script>
 </head>
-<body>
-    <h1>Welcome to Rinterio Project</h1>
+<body class="font-manrope">
+    <main class="w-11/12 mx-auto pt-4 lg:pt-10 bg-header_bg">
+      <!-- Nav Section  -->
+      <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+            
+              <a class="btn btn-ghost text-3xl">
+                <i class="fa-solid block  w-6 h-6  text-xl  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45   "></i>
+               
+                Rinterio
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-extrabold text-base">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+
+                <div class="flex items-center gap-7">
+                
+                    <!-- Search icon -->
+                    <div class="hidden lg:block h-12 w-12 pt-3 pl-4 border border-gray-300 rounded-[50%]">
+                        <i class="fa-solid block  fa-magnifying-glass text-lg"></i>
+                    </div>
+                  <!-- Cart icon -->
+                    <div class="hidden lg:block h-12 w-12 pt-3 pl-4 border border-gray-300 rounded-[50%]">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    </div>
+                    
+
+                   
+
+
+                    <!-- Book Consult -->
+                    <div class="hidden lg:block bg-primary px-3 py-4 rounded-3xl ">
+                        <button class="text-xl font-extrabold">Book Consult 
+
+                            <i class="fa-solid  w-6 h-6 ml-2   fa-arrow-right  text-white bg-black rounded-xl -rotate-45 text-base "></i>
+               
+                        </button>
+                      
+                    </div>
+                </div>
+              
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+              
+            </div>
+          </div>
+      </nav>
+
+      <!-- banner -->
+      <section>
+        <div class="hero  h-auto">
+            <div class="hero-content text-center">
+              <div class="max-w-5xl mx-auto">
+                <img class="block mx-auto" src="assets/banner.png" alt="">
+                <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                <p class="py-6">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <!-- <button class="btn btn-primary">View Details</button> -->
+                
+              
+                    <a class=" btn btn-ghost text-lg bg-secondary p-3 rounded-3xl">
+
+                        View Details
+                        <i class="fa-solid block  w-6 h-6  text-lg  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45   "></i>
+                       
+                        
+                      </a>
+                
+                
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
 </body>
 </html>
