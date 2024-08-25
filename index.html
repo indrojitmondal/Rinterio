@@ -66,13 +66,19 @@
       <section class="lg:w-11/12 lg:mx-auto pt-5 lg:pt-10">
         <nav>
             <div class="navbar ">
-                <div class="navbar-start">
+                <div class="navbar-start lg:transform lg:-translate-y-2">
                 
-                  <a class="btn btn-ghost text-3xl text-h_color">
-                    <i class="fa-solid block  w-8 h-8 lg:w-6 lg:h-6 text-xl  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45 translate-x-1   "></i>
-                   
-                    Rinterio
-                  </a>
+                  
+                 <!-- arrow icon -->
+                 <div class="bg-primary rounded-[50%] w-8 h-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                       
+                 </div>
+
+                 <h3 class="ml-1 lg:text-3xl text-[28px] font-extrabold text-h_color">Rinterio</h3>
+                
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal  px-1 font-extrabold text-base">
@@ -101,13 +107,18 @@
     
     
                         <!-- Book Consult -->
-                        <div class="hidden lg:block bg-primary px-5 py-3 rounded-3xl ">
-                            <button class="text-xl font-extrabold text-footer_bg">Book Consult 
-    
-                                <i class="fa-solid  w-6 h-6 ml-2   fa-arrow-right  text-white bg-black rounded-xl -rotate-45 text-base "></i>
-                   
+                        <div class="hidden  lg:flex items-center bg-primary px-5 py-3 rounded-3xl ">
+                            <button class="text-xl block font-extrabold text-footer_bg ">Book Consult 
                             </button>
                           
+    
+                            <div class="ml-1 bg-footer_bg rounded-[50%] inline-block w-8 h-8 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                       
+                            </div>
+                                  
                         </div>
                     </div>
                   
@@ -149,18 +160,22 @@
                   <img class="block mx-auto" src="assets/banner.png" alt="">
                   <h1 class=" text-3xl lg:text-5xl font-bold">A barn house of this design has a striking appearance</h1>
                   <p class="py-6 text-sm lg:text-base">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal  accents, and large windows that flood the space with natural light.
                   </p>
                    <!-- <button class="btn btn-primary">View Details</button> -->
                 
-              
-                    <a class=" btn btn-ghost text-lg bg-secondary p-3 rounded-3xl">
+                 <!-- view details -->
+                    <button class=" bg-secondary mx-auto  flex p-3 rounded-3xl">
 
-                        View Details
-                        <i class="fa-solid block  w-6 h-6  text-lg  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45   "></i>
+                        <h3 class="text-xl font-bold">View Details</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
                        
-                        
-                    </a>
+                        </div>
+                    </button>
                 
                 
                 </div>
@@ -189,7 +204,7 @@
                     About Us
                 </h4>
                 <h1 class="font-bold text-2xl lg:text-4xl text-[#212121]">We design thoughtful, <br> liveable spaces</h1>
-                <p class="text-sm lg:text-base">At the heart of our design philosophy is the commitment to creating spaces <br> that are both thoughtful and liveable.
+                <p class="text-sm lg:text-base">At the heart of our design philosophy is the commitment to creating spaces  that are both thoughtful and liveable.
                     We believe that design should go beyond.
                 </p>
              </div>
@@ -238,7 +253,7 @@
                       </svg>
                       
                   <div class="stat-value">235+</div>
-                  <div class="stat-desc">Happy Client Review</div>
+                  <div class="text-clg_p">Happy Client Review</div>
                 </div>
               
                 <div class="stat place-items-center">
@@ -247,7 +262,7 @@
                       </svg>
                       
                   <div class="stat-value">50+</div>
-                  <div class="stat-desc">Work Departments</div>
+                  <div class="text-clg_p">Work Departments</div>
                 </div>
               
                 <div class="stat place-items-center">
@@ -256,7 +271,7 @@
                       </svg>
                       
                   <div class="stat-value">30k+</div>
-                  <div class="stat-desc">Our Happy Client</div>
+                  <div class="text-clg_p">Our Happy Client</div>
                 </div>
                 <div class="stat place-items-center">
                     
@@ -265,7 +280,7 @@
                       </svg>
                        
                     <div class="stat-value">307+</div>
-                    <div class="stat-desc">Staff Members</div>
+                    <div class="text-clg_p">Staff Members</div>
                 </div>
          </div>
        
@@ -283,10 +298,18 @@
         <div class="w-11/12 mx-auto pt-20 pb-20">
 
             <!-- heading -->
-            <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold">
-                    <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
-                       
+            <div class="max-w-5xl mx-auto text-center space-y-6 ">
+                 
+                   
+
+                  
+               
+              
+                             
+                <h3 class="font-bold">  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
                     How we works</h3>
                 <h1 class="text-h_color font-bold text-2xl lg:text-4xl">Our Works Process</h1>
                 <p class="text-text_color text-sm lg:text-base font-medium">
@@ -370,14 +393,21 @@
         <div class="w-11/12 mx-auto pt-20 pb-20">
 
             <!-- heading -->
+
+           
+
             <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold bg-connect inline-block rounded-3xl">
-                    <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
-                       
-                    Explore our Latest works</h3>
+                <h3 class="font-bold bg-connect inline-block rounded-3xl  px-4 py-2">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+
+                    Explore our Latest works
+                </h3>
                 <h1 class="text-h_color font-bold text-2xl lg:text-4xl">Our Latest Portfolio</h1>
                 <p class="text-text_color font-medium text-sm lg:text-base">
-                    "Our Latest Portfolio" showcases the most recent and notable projects completed by our team, <br> reflecting our expertise, creativity, and commitment to delivering exceptional results. </p>
+                    "Our Latest Portfolio" showcases the most recent and notable projects completed by our team, reflecting our expertise, creativity, and commitment to delivering exceptional results. </p>
             </div>
 
             <!-- card container-->
@@ -385,19 +415,36 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:grid-rows-12 mt-5 ">
 
                 
-                <div class="lg:col-span-8 lg:row-span-12 flex items-center gap-6 flex-col lg:flex-row border border-borde_c p-5 rounded-2xl">
+                <div class="lg:col-span-8 lg:row-span-12 flex  gap-6 flex-col lg:flex-row border border-borde_c p-5 rounded-2xl">
                     <div class="">
-                        <img class="w-full h-full" src="assets/img1.png" alt="">
+                        <img class="w-full h-full" src="assets/img1.png" alt="commercial">
                      </div>
                     
      
                       
-                     <div class="">
+                     <div class="w-full ">
                             
                              
                                <h2 class="text-text_color text-xl lg:text-2xl font-extrabold">Commercial</h2>
-                               <p class="mt-4 text-clg_p font-medium">Creating a welcoming and engaging environment enhances the customer experience, which can lead to increased loyalty and sales.</p>
-                                 
+                               <p class="mt-4 text-clg_p font-medium">
+                                In the commercial sector, the design of spaces plays a crucial role in shaping the success and reputation of a business. Our focus is on creating commercial environments that are not only visually appealing but also highly functional and aligned with the brand’s identity.
+                                we help create commercial spaces that drive growth and foster a positive brand image.
+                            </p>
+                                
+                                 <!-- view details -->
+                                <button class="mt-6 flex items-center  rounded-3xl">
+
+                                    <h3 class="lg:text-xl text-base font-bold">View Details</h3>
+                                <!-- arrow icon -->
+                                    <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                       
+                                    </div>
+                                </button>
+
+                               <!-- 
                                <div class="mt-5 flex gap-2 items-center">
 
 
@@ -410,9 +457,10 @@
                                 
                              
                                </div>
-                               
+                               -->
                       
                      </div>
+
                 </div>
                 
                
@@ -431,33 +479,50 @@
 
                 
                 <div class="order-3 lg:order-1  lg:col-span-3 lg:row-span-12  border border-borde_c p-5 rounded-2xl">
-                    <div class="">
+                    <div class="w-full h-full ">
                         <img class="w-full h-full" src="assets/img3.png" alt="">
                      </div> 
                 </div>
 
                 <div class="order-2 lg:order-2 lg:col-span-6 lg:row-span-12   lg:flex-row border border-borde_c p-5 rounded-2xl">
                     
-                    <div class="flex lg:flex-row flex-col lg:items-center"> 
-                        <div class="lg:flex-1 ">
-                          <img class="w-full h-full" src="assets/img4.png" alt="">
+                    <div class="flex lg:flex-row flex-col gap-5"> 
+                        <div class="lg:flex-1 h-full">
+                          <img class="w-full h-[260px]" src="assets/img4.png" alt="">
                         </div>
                     
-                        <div class="lg:flex-1 p-6 ">
+                        <div class="lg:flex-1  ">
                                
                                <h2 class="text-text_color text-xl lg:text-2xl font-extrabold">Commercial</h2>
-                               <p class="mt-4 text-clg_p font-medium">These spaces are not only functional but also reflect the brand's identity and influence customer experiences.</p>
-                                 
-                               <div class="mt-5 flex gap-2 items-center">
-                                <h3 class=" text-h_color text-base lg:text-xl font-extrabold">View Details </h3>
+                               <p class="mt-4 text-clg_p font-medium">
+                                Our goal is to craft spaces that enhance productivity, attract customers, and provide a memorable experience, all while ensuring compliance with industry standards and sustainability practices.
+                                we help to create commercial spaces. 
+                            </p>
+                               <!-- 
+                                <div class="mt-5 flex gap-2 items-center">
+                                 <h3 class=" text-h_color text-base lg:text-xl font-extrabold">View Details </h3>
 
                                 <div class="bg-primary rounded-[50%] w-6 h-6">
                                     <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 translate-x-1  "></i>
                        
                                 </div>
                              
-                               </div>          
-                        </div>
+                               </div>         
+                              -->
+                              
+                              <!-- view details -->
+                              <button class="mt-5 flex items-center  rounded-3xl">
+
+                                <h3 class="lg:text-xl text-base font-bold">View Details</h3>
+                                <!-- arrow icon -->
+                                <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                   
+                                </div>
+                              </button>
+                            </div>
                     </div>
                 </div>
 
@@ -488,9 +553,15 @@
 
             <!-- heading -->
             <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold bg-connect inline-block rounded-3xl">
-                    <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
-                    Rinterio News 
+              
+
+                    <h3 class="font-bold bg-connect inline-block rounded-3xl px-4 py-2">
+                  
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                          </svg>
+    
+                          Rinterio News 
                     </h3>
                 <h1 class="text-h_color font-bold text-2xl  lg:text-4xl">Read Our Articles and News</h1>
                 <p class="text-text_color text-sm lg:text-base font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
@@ -531,19 +602,34 @@
                       
                       </p>
                       
-                    
+                    <!--
                       <a class="block w-full mx-0   text-lg  rounded-3xl">
-
+  
                         <div class="flex gap-1 items-center">
                               <h3 class=" text-h_color text-lg font-bold">Read More </h3>
     
                             <div class="bg-primary rounded-[50%] w-6 h-6">
-                            <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
+                              <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
     
                              </div>
     
                         </div>
                        </a> 
+                    -->
+
+                    <!-- view details -->
+                    <button class="flex items-center  w-full mx-0  rounded-3xl">
+
+                        <h3 class="lg:text-lg text-base font-bold">Read More</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
+                        </div>
+                    </button>
+
                     
                    
                      
@@ -580,18 +666,17 @@
                       </p>
                       
                     
-                      <a class="block w-full mx-0   text-lg  rounded-3xl">
+                      <button class="flex items-center  w-full mx-0  rounded-3xl">
 
-                        <div class="flex gap-1 items-center">
-                              <h3 class=" text-h_color text-lg font-bold">Read More </h3>
-    
-                            <div class="bg-primary rounded-[50%] w-6 h-6">
-                            <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
-    
-                             </div>
-    
+                        <h3 class="lg:text-lg text-base font-bold">Read More</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
                         </div>
-                       </a> 
+                    </button>
                     
                    
                      
@@ -629,19 +714,18 @@
                       
                       </p>
                       
-                    
-                      <a class="block w-full mx-0   text-lg  rounded-3xl">
+                    <!-- Read More -->
+                    <button class="flex items-center  w-full mx-0  rounded-3xl">
 
-                        <div class="flex gap-1 items-center">
-                              <h3 class=" text-h_color text-lg font-bold">Read More </h3>
-    
-                            <div class="bg-primary rounded-[50%] w-6 h-6">
-                            <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
-    
-                             </div>
-    
+                        <h3 class="lg:text-lg text-base font-bold">Read More</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
                         </div>
-                       </a> 
+                    </button>
                     
                    
                      
@@ -677,9 +761,18 @@
 
             <!-- heading -->
             <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold bg-connect inline-block rounded-3xl">
+                <!-- <h3 class="font-bold bg-connect inline-block rounded-3xl">
                     <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
                      Explore our services 
+                </h3> -->
+
+                    <h3 class="font-bold bg-connect inline-block rounded-3xl px-4 py-2">
+                  
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                          </svg>
+    
+                          Explore our services
                     </h3>
                 <h1 class="text-h_color font-bold text-2xl  lg:text-4xl">Why choose Rinterio?</h1>
                 <p class="text-text_color text-sm lg:text-base font-medium">Choosing Rinterio means opting for a partner dedicated to excellence in design and execution <br> for both commercial and residential spaces. Here’s why Rinterio stands out:</p>
@@ -707,17 +800,24 @@
                       
                       </p>
                       
-                    <a class=" btn btn-ghost text-lg  p-3 rounded-3xl">
+                    <a class="btn block btn-ghost text-lg  p-3 rounded-3xl">
 
-                    <div class="flex gap-1 items-center">
-                          <h3 class=" text-h_color text-lg font-bold">View Details </h3>
+                  
 
-                        <div class="bg-primary rounded-[50%] w-6 h-6">
-                        <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
+                     <!-- View Details -->
+                    <button class="flex items-center   rounded-3xl">
 
-                         </div>
+                        <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
+                        </div>
+                    </button>
 
-                    </div>
+
                     </a> 
                      
                      
@@ -746,6 +846,7 @@
                       </p>
                       <a class=" btn btn-ghost text-lg  p-3 rounded-3xl">
 
+                        <!-- 
                         <div class="flex gap-1 items-center">
                               <h3 class=" text-h_color text-lg font-bold">View Details </h3>
     
@@ -755,6 +856,20 @@
                              </div>
     
                         </div>
+                        -->
+
+                         <!-- View Details -->
+                    <button class="flex items-center   rounded-3xl">
+
+                        <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
+                        </div>
+                    </button>
                        </a> 
                       
                     </div>
@@ -775,15 +890,19 @@
                       </p>
                       <a class=" btn btn-ghost text-lg  p-3 rounded-3xl">
 
-                        <div class="flex gap-1 items-center">
-                              <h3 class=" text-h_color text-lg font-bold">View Details </h3>
-    
-                            <div class="bg-primary rounded-[50%] w-6 h-6">
-                            <i class="fa-solid     text-sm  fa-arrow-right  text-black   -rotate-45 -translate-y-1   "></i>
-    
-                             </div>
-    
+                       
+                         <!-- View Details -->
+                    <button class="flex items-center   rounded-3xl">
+
+                        <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
+                        <!-- arrow icon -->
+                        <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+           
                         </div>
+                    </button>
                        </a> 
                       
                     </div>
@@ -810,10 +929,20 @@
 
             <!-- heading -->
             <div class="max-w-5xl mx-auto text-center space-y-6">
-                <h3 class="font-bold bg-connect inline-block rounded-3xl">
+                <!-- <h3 class="font-bold bg-connect inline-block rounded-3xl">
                     <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
                        
-                    Let's Connect</h3>
+                    Let's Connect
+                </h3> -->
+
+                    <h3 class="font-bold bg-connect inline-block rounded-3xl px-4 py-2">
+                  
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                          </svg>
+    
+                          Let's Connect
+                    </h3>
                 <h1 class="text-h_color font-bold text-2xl lg:text-4xl"> Let's Discuss Next Project</h1>
                 <p class="text-text_color text-sm lg:text-base font-medium">By collaborating closely and sharing insights, we can develop a comprehensive strategy that brings your ideas to life. Let's embark on this exciting journey together, turning concepts into reality and achieving success with your next project.</p>
             </div>
@@ -845,10 +974,18 @@
                     <h3 class="text-xl font-extrabold">Send Mail 
                     </h3>
 
-                    <div class="bg-black rounded-[50%] w-6 h-6">
+                    <!-- <div class="bg-black rounded-[50%] w-6 h-6">
                      <i class="fa-solid     text-sm  fa-arrow-right  text-white   transform -rotate-45   "></i>
 
+                    </div> -->
+
+                    <div class="ml-1 bg-footer_bg rounded-[50%] inline-block w-8 h-8 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+               
                     </div>
+                          
 
                 </div>
                 
@@ -871,13 +1008,33 @@
         <div class="lg:w-7/12 mx-auto">
 
             <div class="text-center">
-                <a class="btn btn-ghost text-3xl text-[#E9E9E9]">
-                    <i class="fa-solid block  w-6 h-6  text-xl  fa-arrow-right  text-black bg-primary rounded-[50%] -rotate-45   "></i>
-                   
-                    Rinterio
+                <a class="btn btn-ghost ">
+                    
+                    <div class="bg-primary rounded-[50%] w-8 h-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg>
+                           
+                      </div>
+                    <span class="text-border_c text-3xl font-extrabold">Rinterio</span>
                   </a>
             </div>
-            <p class="text-center text-clg_p font-medium mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        
+
+            <!-- <div class="flex items-center gap-1 border-2 border-red-600 ">
+             
+              <div class="bg-primary rounded-[50%] w-8 h-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                   
+              </div>
+
+             <h3 class="lg:text-3xl text-[28px] font-extrabold text-border_c">Rinterio</h3>
+            
+            </div> -->
+
+            <p class="text-center text-clg_p font-medium mt-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
            
             <div class="text-[#E9E9E9] mt-6 ">
                 <nav class="list-none flex text-center flex-col gap-4 lg:flex-row lg:justify-between font-medium ">
@@ -890,13 +1047,28 @@
             </div>
            
 
-            <div class="text-center mt-8 lg:mt-12 ">
+            <!-- <div class="text-center mt-8 lg:mt-12 ">
                 <button class="text-xl font-extrabold bg-primary text-footer_bg rounded-[32px] px-3 py-3">Book Consult 
 
                     <i class="fa-solid  w-6 h-6  text-base  fa-arrow-right  text-white bg-black rounded-[50%] -rotate-45   "></i>
                    
                 </button>
               
+            </div> -->
+
+            <!-- Book Consult -->
+            <div class="mt-8 lg:mt-12 w-max mx-auto flex items-center bg-primary px-5 py-3 rounded-3xl ">
+                <button class="text-xl block font-extrabold text-footer_bg ">Book Consult 
+                </button>
+              
+
+                <div class="ml-1 bg-footer_bg rounded-[50%] inline-block w-8 h-8 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2 translate-y-2 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+           
+                </div>
+                      
             </div>
 
 
